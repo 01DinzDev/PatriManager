@@ -1,0 +1,9 @@
+#E2F1FD
+#E9F6ED
+#F9B4AD
+#FDEADD
+
+https://chatgpt.com/c/6aea76b4-a694-83e9-a013-aa5b7c99231c
+
+Chart.js. :
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

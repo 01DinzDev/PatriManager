@@ -1,0 +1,475 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.dashboard {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    width: 18%;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+
+    background-color: #232323;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: -18px;
+    margin-bottom: 40px;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 6px 10px;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    transition: 0.2s;
+}
+
+.menu-item img {
+    width: 22px;
+    height: 22px;
+}
+
+.menu-item:hover {
+    background-color: #161616;
+    transform: translateX(4px);
+}
+
+.selected {
+    color: #232323;
+    background-color: #ffffff;
+}
+
+.selected:hover {
+    color: #232323;
+    background-color: #ffffff;
+}
+
+
+.sidebar-bottom {
+    margin-top: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+
+.sair:hover {
+    background-color: #dc2626;
+}
+
+
+.conteudo {
+    width: 82%;
+    min-height: 100vh;
+
+    margin-left: 18%;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #f5f5f5;
+}
+
+
+.header {
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    padding: 0 30px;
+
+    background-color: #232323;
+    color: #ffffff;
+}
+
+#aHeader {
+    width: 30px;
+    height: 30px;
+    transition: 0.3s ease;
+}
+
+#aHeader:hover {
+    padding: 1px;
+    transform: translateY(-5px);
+} 
+
+#EndHeeader {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.HrHeeader {
+    height: 35px;
+}
+
+
+
+h3 {
+    text-align: center;
+}
+
+
+#Usuarios_Log {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    border-bottom: 2px #ffffff solid;
+
+    padding: 8px 10px;
+
+    color: white;
+}
+
+#Usuarios_Log_Img {
+    width: 40px;
+    height: 40px;
+
+    border: 1px #ffffff solid;
+    border-radius: 12px;
+    
+    background-color: #ffffff;
+}
+
+
+
+.pagina {
+    width: 100%;
+    flex: 1;
+
+    padding: 20px;
+}
+
+.Div_Header1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding: 5px;
+    border-top : #aaaaaa double 5px;
+    border-bottom: #aaaaaa double 5px  ;
+    border-radius: 10px;
+} 
+
+select {
+    border: none;
+    background-color: #F5F5F5;
+}
+
+
+
+#DiasDiv {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    
+    border: 2px #aaaaaa solid;
+    border-radius: 10px;
+
+    padding: 10px;
+    color: #232323;
+}
+#DiasDiv #categoria :hover {
+    background: #ffffff;
+    color: #232323;
+}
+
+
+option:checked {
+    background-color: #aaaaaa;
+}
+
+#DiasDiv #categoria :checked {
+    background: #aaaaaa;
+    color: white;
+}
+
+
+
+#CalendarCategoriaImg {
+    width: 22px;
+    height: 22px;
+}
+
+select:focus {
+    outline: none;
+}
+
+.pagina h1 {
+    color: #232323;
+    margin-bottom: 10px;
+}
+
+.pagina p {
+    color: #666666;
+}
+
+#Find_Div {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+#Find_Div:hover {
+    border-color: #232323;
+    background-color: #666666;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #ffffff;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+input:hover {
+    background-color: #f0f0f0;
+    border-color: #232323;
+}
+
+input:focus {
+    outline: none;
+    border-color: #232323;
+    background-color: #ffffff;
+}
+
+#ButtonFind {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 2px solid transparent;
+    border-left: none;
+    padding: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#ButtonFind:hover {
+    background-color: #eaeaea;
+    
+}
+
+#inputFind:focus {
+    outline: none;
+}
+
+
+/* - Pop Style - */
+
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(3px);
+
+    animation: aparecer 0.3s ease;
+}
+
+.popup {
+    position: relative;
+
+    width: 380px;
+    padding: 35px;
+
+    text-align: center;
+
+    background-color: #232323;
+    color: #ffffff;
+
+    border: 1px solid #3a3a3a;
+    border-radius: 15px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+
+    animation: subir 0.3s ease;
+}
+
+.popup-fechar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    width: 30px;
+    height: 30px;
+
+    border: none;
+    background: transparent;
+
+    color: #ffffff;
+    font-size: 25px;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.popup-fechar:hover {
+    color: #aaaaaa;
+    transform: rotate(90deg);
+}
+
+.popup-icon {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #ffffff;
+    color: #232323;
+
+    font-size: 32px;
+    font-weight: bold;
+
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.15);
+}
+
+.popup h2 {
+    margin-bottom: 10px;
+
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.popup p {
+    margin-bottom: 25px;
+
+    color: #aaaaaa;
+    font-size: 15px;
+}
+
+.popup-button {
+    width: 100%;
+    height: 42px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #ffffff;
+    color: #232323;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.popup-button:hover {
+    background-color: #dcdcdc;
+    transform: translateY(-2px);
+}
+
+.popup-overlay.fechar {
+    animation: desaparecer 0.3s ease forwards;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes desaparecer {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes subir {
+    from {
+        opacity: 0;
+        transform: translateY(25px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}

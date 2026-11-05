@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Entrar || PatriManager </title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="/src/css/entrar.css">
+    <link rel="stylesheet" href="/src/css/responsive/r_entrar.css">
+</head>
+<body>
+
+    <section>
+        <div>
+            <h1>Entrar</h1>
+            <p>Acesse sua conta</p>
+        </div>
+        <form action="entra" id="formLogin">
+            
+            <div class="DivInput">
+                <label for="usuario" >Usuário : </label>
+                <input 
+                    type="text" 
+                    name="usuario" 
+                    id="usuario" 
+                    minlength="3" 
+                    maxlength="20"
+                    placeholder="Digite seu Usuário"
+                    required
+                >
+            </div>
+
+            <div class="DivInput">
+                <label for="senha" > Senha :</label>
+                <input 
+                    type="password" 
+                    name="senha" 
+                    id="senha" 
+                    minlength="4" 
+                    maxlength="20"
+                    placeholder="Digite sua senha"
+                    required
+                >
+            </div>
+
+            <button type="submit">Entrar</button>
+        </form>
+
+        <div>
+            <p>Criar uma <a href="cadastre-se.html">Conta</a> ! </p>
+            <p>Esqueci <a href="error404.html">minha senha</a> ! </p>
+        </div>
+
+    </section>
+    
+    <script src="/src/js/login.js"></script>
+</body>
+</html>

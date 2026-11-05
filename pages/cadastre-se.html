@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cadastre-se || PatriManager </title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/src/css/cadastre-se.css">
+    <link rel="stylesheet" href="/src/css/responsive/r_cadastre-se.css">
+</head>
+<body>
+
+    <section>
+        <div>
+            <h1>Cadastre-se</h1>
+            <p>Cadastra um novo usuário!</p>
+        </div>
+        <form action="cadastro" id="formCadastro">
+
+            <div class="DivInput">
+                <label for="usuario" > Usuário : </label>
+                <input 
+                    type="text" 
+                    name="usuario" 
+                    id="usuario" 
+                    minlength="3" 
+                    maxlength="25"
+                    placeholder="Digite um Usuário"
+                    required
+                >
+                <span>no maximo 25 caracteres! </span>
+            </div>
+
+            <div class="DivInput">
+                <label for="email" > E-Mail :</label>
+                <input 
+                    type="email"
+                    name="email" 
+                    id="email" 
+                    minlength="4" 
+                    maxlength="120"
+                    placeholder="Digite seu E-mail"
+                    required
+                >
+                <span>no maximo 120 caracteres! </span>
+            </div>
+
+            <div class="DivInput">
+                <label for="senha" > Senha :</label>
+                <input 
+                    type="password" 
+                    name="senha" 
+                    id="senha" 
+                    minlength="4" 
+                    maxlength="20"
+                    placeholder="Digite uma Senha"
+                    required
+                >
+                <span>no maximo 20 caracteres! </span>
+            </div>
+
+            <div class="DivInput">
+                <label for="senhaConfirma" >Confirmar Senha :</label>
+                <input 
+                    type="password" 
+                    name="senhaConfirma" 
+                    id="senhaConfirma" 
+                    minlength="4" 
+                    maxlength="20"
+                    placeholder="Confirme sua senha"
+                    required
+                >
+            </div>
+
+
+            <button type="submit">Cadastre-se</button>
+        </form>
+
+        <p>Já tenho <a href="/pages/entrar.html">Conta</a> ! </p>
+    </section>
+    
+    <script src="/src/js/cadastre-se.js"></script>
+</body>
+</html>

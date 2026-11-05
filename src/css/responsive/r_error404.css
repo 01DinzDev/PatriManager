@@ -1,0 +1,52 @@
+/* error404.css to error404.html */
+
+/*  
+    Tablet responsividade 
+    769px -> 1024px
+*/
+
+@media (max-width: 1024px) {
+
+}
+
+/* 
+    Celular
+    até 768px
+*/
+
+@media (max-width: 768px){
+
+}
+
+/* 
+    Celular - Mini
+    até 570px
+*/
+
+@media (max-width: 570px) {
+    h1 {
+        font-size: 100px;
+        margin-bottom: -55px;
+    }
+    h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 10px;
+        align-items: center;
+    }
+    button {
+        font-size: 20px;
+    }
+
+    button:hover {
+        font-size: 20px ;
+        color: #232323;
+        background-color: #FFFFFF;
+        border: 3px #232323 solid;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}

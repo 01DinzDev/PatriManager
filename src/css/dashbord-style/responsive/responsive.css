@@ -1,0 +1,187 @@
+/* Responsividade do Dashboard - PatriManager V3.0 */
+
+/* Tablet: até 1024px */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 220px;
+        padding: 18px 14px;
+    }
+
+    .logo img {
+        width: 165px;
+    }
+
+    .conteudo {
+        width: calc(100% - 220px);
+        margin-left: 220px;
+    }
+
+    .header {
+        padding: 0 22px;
+    }
+
+    .pagina {
+        padding: 24px;
+    }
+}
+
+/* Celular: até 768px */
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        height: auto;
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .logo {
+        margin: 0 0 8px;
+        justify-content: flex-start;
+    }
+
+    .logo img {
+        width: 145px;
+    }
+
+    .menu,
+    .sidebar-bottom {
+        flex-direction: row;
+        gap: 6px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 6px;
+        scrollbar-width: thin;
+    }
+
+    .sidebar-bottom {
+        margin-top: 0;
+        border-top: 1px solid #3a3a3a;
+        padding-top: 8px;
+    }
+
+    .menu-item {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        padding: 9px 10px;
+        font-size: 13px;
+    }
+
+    .menu-item:hover {
+        transform: translateY(-2px);
+    }
+
+    .menu-item img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .conteudo {
+        width: 100%;
+        min-height: auto;
+        min-height: calc(100vh - 150px);
+        margin-left: 0;
+    }
+
+    .header {
+        min-height: 60px;
+        height: auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 12px 16px;
+    }
+
+    .header h3 {
+        font-size: 17px;
+    }
+
+    .pagina {
+        padding: 20px 16px;
+    }
+
+    .popup {
+        width: min(380px, calc(100% - 32px));
+        padding: 30px 22px;
+    }
+}
+
+/* Celular pequeno: até 570px */
+@media (max-width: 570px) {
+    .sidebar {
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 125px;
+    }
+
+    .menu-item {
+        gap: 7px;
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .menu-item img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .header {
+        text-align: center;
+        align-items: stretch;
+        flex-direction: column-reverse;
+        padding: 12px;
+    }
+
+    #Usuarios_Log {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header h3 {
+        font-size: 16px;
+    }
+
+    .HrHeeader {
+
+    opacity: 0;
+
+
+    }
+
+    #Find_Div {
+        width: 100%;
+    }
+
+    #inputFind {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .pagina {
+        padding: 18px 12px;
+    }
+
+    .pagina h1 {
+        font-size: 22px;
+    }
+
+    .pagina p {
+        font-size: 14px;
+    }
+
+    .popup {
+        padding: 28px 18px;
+    }
+
+    .popup h2 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 60px;
+}
+
+section {
+    background-color: #232323;
+    color: #FFFFFF;
+    width: 40%;
+    height: 70%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 18px;
+    box-shadow: 0 15px 30px #000000a8;
+}
+
+form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    gap: 20px ;
+}
+
+.DivInput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+input {
+    color: white;
+    background-color: transparent;
+    width: 100%;
+    padding: 18px;
+    font-size: 15px;
+    border: none;
+    border-bottom: #FFFFFF 2px solid;
+    border-right: #FFFFFF 1px solid;
+    border-radius: 20px;
+    outline: none;
+    transition: 0.1s ;
+}
+
+input:hover {
+    border: none;
+    border-bottom: #FFFFFF 3px  solid ;
+    border-right: #FFFFFF 2px solid ;
+    font-size: 17px;
+}
+
+span {
+    font-size: 10px;
+}
+
+button {
+    color: #FFFFFF;
+    background-color: #232323;
+    width: 60%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: #FFFFFF solid 1px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    font-size: 18px ;
+    border: #FFFFFF solid 2px ;
+}
+
+a {
+    font-size: 20px;
+    color: white;
+    transition: 0.2s ease;
+}
+
+a:hover {
+    font-size: 18px;
+}
+

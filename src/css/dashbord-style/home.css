@@ -1,0 +1,58 @@
+.Div_Line1 {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+
+    justify-content: space-around;
+}
+
+
+
+.Card_DashBoard_States {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 340px;
+    height: 110px;
+
+    border-radius: 20px;
+
+    gap: 20px;
+}
+
+
+
+
+
+#card-1 {
+    border: 1px #0374EF solid;
+    background-color: #E2F1FD;
+}
+
+#card-2 {
+    border: 1px #029E55 solid;
+    background-color: #E9F6ED;
+}
+
+#card-3 {
+    border: 1px #F06C18 solid;
+    background-color: #FDEADD;
+}
+
+#card-4 {
+    border: 1px #E50E00 solid;
+    background-color: #F9B4AD ;
+}
+
+
+.IndicadorTitulo {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.IdicadorIcon {
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+}

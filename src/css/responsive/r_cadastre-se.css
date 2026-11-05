@@ -1,0 +1,59 @@
+/* entar.css to entrar.html */
+
+/*  
+    Tablet responsividade 
+    769px -> 1024px
+*/
+
+@media (max-width: 1024px) {
+    section {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+/* 
+    Celular
+    até 768px
+*/
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    section {
+        width: 95%;
+        height: 95%;
+        gap: 2px;
+    }
+
+    input {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    span {
+        font-size: 10px;
+    }
+}
+
+/* 
+    Celular - Mini
+    até 570px
+*/
+
+@media (max-width: 570px) {
+    section {
+        width: 90%;
+        height: 90%;
+    }
+
+    input {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}

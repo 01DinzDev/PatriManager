@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard || PatriManager</title>
+
+    <link rel="shortcut icon"
+        href="/public/assets/svg/dashbord/svg/Disabled-Icon/HomeDisabled.svg"
+        type="image/x-icon">
+
+    <link rel="stylesheet"
+        href="/src/css/dashbord-style/global/global.css">
+    <link rel="stylesheet" 
+        href="/src/css/dashbord-style/home.css">
+    <link rel="stylesheet" 
+        href="/src/css/dashbord-style/responsive/responsive.css">
+    <link rel="stylesheet" 
+        href="/src/css/dashbord-style/graficos.css">
+</head>
+
+<body>
+
+    <section class="dashboard">
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                <img src="/public/assets/icons/logomain/logowhite.png" alt="PatriManager">
+            </div>
+
+            <nav class="menu">
+
+                <a href="home.html" class="menu-item selected">
+                    <img src="/public/assets/svg/dashbord/svg/Selected-Icon/HomeSelected.svg" alt="">
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="patrimonio.html" class="menu-item">
+                    <img src="/public/assets/svg/dashbord/svg/Disabled-Icon/PatrimoniosDisabled.svg" alt="">
+                    <span>Patrimônio</span>
+                </a>
+
+                <a href="movimentacoes.html" class="menu-item">
+                    <img src="/public/assets/svg/dashbord/svg/Disabled-Icon/MovimentacaoDisabled.svg" alt="">
+                    <span>Movimentações</span>
+                </a>
+
+                <a href="manutencoes.html" class="menu-item">
+                    <img src="/public/assets/svg/dashbord/svg/Disabled-Icon/ManutencaoDisabled.svg" alt="">
+                    <span>Manutenções</span>
+                </a>
+
+                <a href="inventario.html" class="menu-item">
+                    <img src="/public/assets/svg/dashbord/svg/Disabled-Icon/InventarioDisabled.svg" alt="">
+                    <span>Inventário</span>
+                </a>
+
+                <a href="localizacoes.html" class="menu-item">
+                    <img src="/public/assets/svg/dashbord/svg/Disabled-Icon/LocationDisabled.svg" alt="">
+                    <span>Localizações</span>
+                </a>
+
+                <a href="relatorios.html" class="menu-item">
+                    <img src="/public/assets/svg/dashbord/svg/Disabled-Icon/RelatoriosDisabled.svg" alt="">
+                    <span>Relatórios</span>
+                </a>
+
+                <a href="notificacoes.html" class="menu-item">
+                    <img src="/public/assets/svg/dashbord/svg/Disabled-Icon/NotificacoesDisabled.svg" alt="">
+                    <span>Notificações</span>
+                </a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+
+                <a href="usuarios.html" class="menu-item">
+                    <img src="/public/assets/svg/dashbord/svg/Disabled-Icon/UserDisabled.svg" alt="">
+                    <span>Usuários</span>
+                </a>
+
+                <a href="configuracoes.html" class="menu-item">
+                    <img src="/public/assets/svg/dashbord/svg/Disabled-Icon/ConfiguracaoDisabled.svg" alt="">
+                    <span>Configurações</span>
+                </a>
+
+                <a href="/pages/entrar.html" class="menu-item sair">
+                    <img src="/public/assets/svg/dashbord/svg/SaidaI.svg" alt="">
+                    <span>Sair</span>
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <main class="conteudo">
+            
+            <header class="header">
+                
+                <div id="Usuarios_Log">
+                    <img id="Usuarios_Log_Img" src="/public/assets/svg/dashbord/svg/UserBase.svg" alt="">
+                    <h3>admin</h3>
+                </div>
+
+                <div id="Find_Div">
+                    <input placeholder="Pesguisar ( Ctrl + K ) " id="inputFind" type="text">
+                    <button id="ButtonFind"><img src="/public/assets/svg/dashbord/svg/Find_Icon.svg" alt=""></button>
+
+                </div>
+
+                <div id="EndHeeader">
+
+                    <hr class="HrHeeader">
+
+                <a id="aHeader" href="notificacoes.html">
+                    <img src="/public/assets/svg/dashbord/svg/Disabled-Icon/NotificacoesDisabled.svg" alt="">
+                </a>
+
+                <h3>Dashboard</h3>
+                </div>
+
+            </header>
+
+            <section class="pagina">
+
+                <div class="Div_Header1">
+                    <div>
+                        <h1>Dashboard</h1>
+                        <p>Bem-vindo ao PatriManager.</p>
+                    </div> 
+
+                    <div id="DiasDiv">
+                        <img id="CalendarCategoriaImg" src="/public/assets/svg/dashbord/svg/Calendar.svg" alt="">
+                        <label for="categoria "> Ultimos </label>
+                        <select id="categoria" name="categoria">
+                            <option value="7dias"> 7 Dias</option>
+                            <option value="30dias">30 Dias</option>
+                            <option value="1mes">1 mês</option>
+                            <option value="3mes">3 Mês</option>
+                            <option value="6mes">6 Mês</option>
+                            <option value="1ano">1 Ano</option>
+                            <option value="max"> Max </option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <div class="Div_Line1">
+
+                    <div class="Card_DashBoard_States" id="card-1">
+                        <img class="IdicadorIcon" src="/public/assets/svg/dashbord/svg/DashPlusIcon/DashBoardParti.svg" alt="">
+
+                        <div class="IdicadorInfo">
+                            <span class="IndicadorTitulo"> Total de Patrimônios</span>
+                            <h2 class="IdicadorNumber"> 0000 </h2>
+                        </div>
+                    </div>
+
+                    <div class="Card_DashBoard_States" id="card-2">
+                        <img class="IdicadorIcon" src="/public/assets/svg/dashbord/svg/DashPlusIcon/HouseEmUso.svg" alt="">
+
+                        <div class="IdicadorInfo">
+                            <span class="IndicadorTitulo"> Em Uso </span>
+                            <h2 class="IdicadorNumber"> 0000 </h2>
+                        </div>
+                    </div>
+
+                    <div class="Card_DashBoard_States" id="card-3">
+                        <img class="IdicadorIcon" src="/public/assets/svg/dashbord/svg/DashPlusIcon/Manute.svg" alt="">
+
+                        <div class="IdicadorInfo">
+                            <span class="IndicadorTitulo"> Em Manutenção </span>
+                            <h2 class="IdicadorNumber"> 0000 </h2>
+                        </div>
+                    </div>
+
+                    <div class="Card_DashBoard_States" id="card-4">
+                        <img class="IdicadorIcon" src="/public/assets/svg/dashbord/svg/DashPlusIcon/Inativos.svg" alt="">
+
+                        <div class="IdicadorInfo">
+                            <span class="IndicadorTitulo"> Inativos</span>
+                            <h2 class="IdicadorNumber"> 0000 </h2>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                
+            </section>
+
+        </main>
+
+    </section>
+
+
+
+
+
+<!-- Pop de boas Vindas  -->
+<div id="popupEntrada" class="popup-overlay">
+    <div class="popup">
+
+        <button id="fecharPopup" class="popup-fechar">&times;</button>
+
+        <div class="popup-icon">
+            ✓
+        </div>
+
+        <h2>Bem-vindo, <span id="nomeUsuario"></span>!</h2>
+
+        <p>Você entrou no sistema com sucesso.</p>
+
+        <button id="continuarPopup" class="popup-button">
+            Continuar
+        </button>
+
+    </div>
+
+
+</div>
+<!-- Pop de boas Vindas  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/src/utils/pesguisaAtalho.js"></script>
+    <script src="/src/utils/popDeEntrada.js"> </script>
+
+</body>
+
+</html>

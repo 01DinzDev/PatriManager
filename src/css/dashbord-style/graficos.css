@@ -1,0 +1,24 @@
+.grafico-container {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    gap: 15px;
+}
+
+.grafico-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    height: 300px;
+}
+
+.grafico-card canvas {
+    width: 100% !important;
+    height: 230px !important;
+}
+
+@media (max-width: 768px) {
+    .grafico-container {
+        grid-template-columns: 1fr;
+    }
+}

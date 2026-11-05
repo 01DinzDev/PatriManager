@@ -1,0 +1,73 @@
+/* responsive.css to index.html */
+
+/*  
+    Tablet responsividade 
+    769px -> 1024px
+*/
+
+@media (max-width: 1024px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+    }
+
+    section {
+        width: 100vw;
+    }
+
+    h2 {
+        font-size: 100px;
+        font: bold;
+    }
+}
+
+/* 
+    Celular
+    até 768px
+*/
+
+@media (max-width: 768px) {
+    @media (max-width: 1024px) {
+        nav {
+            display: flex;
+            flex-direction: row;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        section {
+            width: 100vw;
+        }
+
+        h2 {
+            font-size: 80px;
+            font: bold;
+        }
+
+        a {
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    h1 {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 25px;
+        font-weight: bold;
+        width: 1ch;
+        overflow-wrap: break-word;
+    }
+
+    #Icon {
+        width: 25px;
+        height: 25px;
+    }
+
+}
