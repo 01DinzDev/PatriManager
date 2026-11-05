@@ -116,11 +116,11 @@
 
                     <hr class="HrHeeader">
 
-                <a id="aHeader" href="notificacoes.html">
-                    <img src="/public/assets/svg/dashbord/svg/Disabled-Icon/NotificacoesDisabled.svg" alt="">
-                </a>
+                    <a id="aHeader" href="notificacoes.html">
+                        <img src="/public/assets/svg/dashbord/svg/Disabled-Icon/NotificacoesDisabled.svg" alt="">
+                    </a>
 
-                <h3>Dashboard</h3>
+                    <h3>Dashboard</h3>
                 </div>
 
             </header>
@@ -189,6 +189,81 @@
 
                 </div>
 
+                <section class="AtividadesRecentes">
+
+
+                    <div class="AtividadesHeader">
+
+                        <h2>Atividades Recentes</h2>
+
+                        <a href="notificacoes.html" class="BotaoVerTodas">
+                            Ver todas →
+                        </a>
+
+                    </div>
+
+
+                    <div class="ListaAtividades">
+                        <div class="AtividadeItem">
+
+                            <div class="AtividadeIcon IconPatrimonio">
+                                <span>+</span>
+                            </div>
+
+                            <p>
+                                Novo patrimônio cadastrado:
+                                <strong>Notebook Dell</strong>
+                            </p>
+
+                            <span class="AtividadeTempo">há 5 min</span>
+
+                        </div>
+
+
+                        <div class="AtividadeItem">
+                            <div class="AtividadeIcon IconMovimentacao">
+                                <span>↔</span>
+                            </div>
+
+                            <p>
+                                Movimentação realizada:
+                                <strong>Transferência para TI</strong>
+                            </p>
+                            <span class="AtividadeTempo">há 12 min</span>
+                        </div>
+
+
+                        <div class="AtividadeItem">
+                            <div class="AtividadeIcon IconManutencao">
+                                <span>🔧</span>
+                            </div>
+
+                            <p>
+                                Manutenção concluída:
+                                <strong>Impressora HP</strong>
+                            </p>
+
+                            <span class="AtividadeTempo">há 30 min</span>
+                        </div>
+
+
+                        <div class="AtividadeItem">
+                            <div class="AtividadeIcon IconUsuario">
+                                <span>♟</span>
+                            </div>
+
+                            <p>
+                                Novo usuário cadastrado:
+                                <strong>Maria Silva</strong>
+                            </p>
+
+                            <span class="AtividadeTempo">há 1 h</span>
+                        </div>
+                    </div>
+                </section>
+
+
+
 
                 
             </section>
@@ -201,29 +276,29 @@
 
 
 
-<!-- Pop de boas Vindas  -->
-<div id="popupEntrada" class="popup-overlay">
-    <div class="popup">
+    <!-- Pop de boas Vindas  -->
+    <div id="popupEntrada" class="popup-overlay">
+        <div class="popup">
 
-        <button id="fecharPopup" class="popup-fechar">&times;</button>
+            <button id="fecharPopup" class="popup-fechar">&times;</button>
 
-        <div class="popup-icon">
-            ✓
+            <div class="popup-icon">
+                ✓
+            </div>
+
+            <h2>Bem-vindo, <span id="nomeUsuario"></span>!</h2>
+
+            <p>Você entrou no sistema com sucesso.</p>
+
+            <button id="continuarPopup" class="popup-button">
+                Continuar
+            </button>
+
         </div>
 
-        <h2>Bem-vindo, <span id="nomeUsuario"></span>!</h2>
-
-        <p>Você entrou no sistema com sucesso.</p>
-
-        <button id="continuarPopup" class="popup-button">
-            Continuar
-        </button>
 
     </div>
-
-
-</div>
-<!-- Pop de boas Vindas  -->
+    <!-- Pop de boas Vindas  -->
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="/src/utils/pesguisaAtalho.js"></script>

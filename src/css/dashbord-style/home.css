@@ -56,3 +56,175 @@
     height: 60px;
     margin-left: 15px;
 }
+
+/* ATIVIDADES RECENTES */
+.AtividadesRecentes {
+    width: 100%;
+    margin-top: 20px;
+    padding: 18px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dce3eb;
+    border-radius: 12px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+
+
+
+.AtividadesHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+.AtividadesHeader h2 {
+    color: #232323;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+
+.BotaoVerTodas {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #0374EF;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.BotaoVerTodas:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+
+
+
+.ListaAtividades {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+    width: 100%;
+}
+
+
+
+
+.AtividadeItem {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    width: 100%;
+    min-height: 30px;
+}
+
+
+
+
+.AtividadeIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 27px;
+    height: 27px;
+    min-width: 27px;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+
+.IconPatrimonio {
+    background-color: #1684EF;
+}
+
+.IconMovimentacao {
+    background-color: #21B978;
+}
+
+.IconManutencao {
+    background-color: #A34BEA;
+}
+
+.IconUsuario {
+    background-color: #FF8734;
+}
+
+
+
+
+.AtividadeItem p {
+    flex: 1;
+    min-width: 0;
+
+    color: #444444;
+
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.AtividadeItem strong {
+    color: #232323;
+    font-weight: 600;
+}
+
+
+
+
+.AtividadeTempo {
+    color: #888888;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+}
+
+
+
+
+@media (max-width: 570px) {
+
+    .AtividadesRecentes {
+        padding: 14px;
+    }
+
+    .AtividadesHeader h2 {
+        font-size: 16px;
+    }
+
+    .AtividadeItem {
+        gap: 8px;
+    }
+
+    .AtividadeItem p {
+        font-size: 11px;
+    }
+
+    .AtividadeTempo {
+        font-size: 10px;
+    }
+
+}
