@@ -86,14 +86,8 @@ h2 {
     text-transform: uppercase;
 }
 
-footer {
-    background-color: #232323;
-    color: #FFFFFF;
-    justify-content: center;
-    text-align: center;
-    padding: 10px;
-    box-shadow: 0 -6px 50px #000000a8;
-}
+
+
 
 #mobileSource {
     display: none;
@@ -102,3 +96,14 @@ footer {
 #LogoHero {
     display: block;
 }
+
+.footer {
+    background-color: #232323;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
