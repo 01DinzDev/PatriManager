@@ -487,3 +487,192 @@ input:focus {
         transform: translateY(0) scale(1);
     }
 }
+
+
+.AtividadesRecentes {
+    width: 100%;
+    margin-top: 20px;
+    padding: 18px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dce3eb;
+    border-radius: 12px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Cabeçalho */
+
+.AtividadesHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+.AtividadesHeader h2 {
+    color: #232323;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.BotaoVerTodas {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #232323;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.BotaoVerTodas:hover {
+    color: #444444;
+    text-decoration: underline;
+}
+
+/* Lista de atividades */
+
+.ListaAtividades {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    width: 100%;
+}
+
+/* Item */
+
+.AtividadeItem {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    width: 100%;
+    min-height: 30px;
+
+    padding: 5px 8px;
+}
+
+/* Ícones */
+
+.AtividadeIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 27px;
+    height: 27px;
+    min-width: 27px;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Cores dos ícones */
+
+.IconPatrimonio {
+    background-color: #1684EF;
+}
+
+.IconMovimentacao {
+    background-color: #df12fd;
+}
+
+.IconManutencao {
+    background-color: #F06C18;
+}
+
+.IconUsuario {
+    background-color: #ffc934;
+}
+
+/* Cores dos itens */
+
+.Color_Patrimonio {
+    background-color: #E2F1FD;
+    border-radius: 5px;
+}
+
+.Color_Movimentacao {
+    background-color: #fad3ff;
+    border-radius: 5px;
+}
+
+.Color_Manutencao {
+    background-color: #FDEADD;
+    border-radius: 5px;
+}
+
+.Color_Usuario {
+    background-color: #fff3d3;
+    border-radius: 5px;
+}
+
+/* Conteúdo da atividade */
+
+.AtividadeConteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    flex: 1;
+    min-width: 0;
+
+    gap: 3px;
+}
+
+/* Título da atividade */
+
+.AtividadeItem p {
+    flex: 1;
+    min-width: 0;
+
+    margin: 0;
+
+    color: #444444;
+
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.AtividadeItem strong {
+    color: #232323;
+    font-weight: 600;
+}
+
+/* Descrição */
+
+.AtividadeDescricao {
+    color: #64748B;
+
+    font-size: 11px;
+    font-weight: 400;
+
+    line-height: 1.3;
+}
+
+/* Horário */
+
+.AtividadeTempo {
+    margin-left: auto;
+
+    color: #888888;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+    flex-shrink: 0;
+}

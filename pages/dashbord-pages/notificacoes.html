@@ -95,7 +95,7 @@
                 <div id="Find_Div">
                     <input placeholder="Pesguisar ( Ctrl + K ) " id="inputFind" type="text">
                     <button id="ButtonFind"><img src="/public/assets/svg/dashbord/svg/Find_Icon.svg" alt=""></button>
-                    
+
                 </div>
 
                 <h3>Notificações</h3>
@@ -103,9 +103,276 @@
             </header>
 
             <section class="pagina">
-                <h1>Notificações</h1>
-                <p>Visualize as notificações e alertas do sistema.</p>
+
+                <div class="Div_Header1">
+                    <div>
+                        <h1>Notificações</h1>
+                        <p>Visualize as notificações e alertas do sistema.</p>
+                    </div>
+
+                    <div id="DiasDiv">
+                        <img id="CalendarCategoriaImg" src="/public/assets/svg/dashbord/svg/Calendar.svg" alt="">
+                        <label for="categoria "> Ultimos </label>
+                        <select id="categoria" name="categoria">
+                            <option value="7dias"> 7 Dias</option>
+                            <option value="30dias">30 Dias</option>
+                            <option value="1mes">1 mês</option>
+                            <option value="3mes">3 Mês</option>
+                            <option value="6mes">6 Mês</option>
+                            <option value="1ano">1 Ano</option>
+                            <option value="max"> Max </option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <section class="AtividadesRecentes">
+
+                    <div class="AtividadesHeader">
+                        <h2>
+                            <i class="fa-solid fa-clock-rotate-left" style="color: #232323;"></i>
+                            Atividades Recentes
+                        </h2>
+
+                        <a href="notificacoes.html" class="BotaoVerTodas">
+                            Ver todas →
+                        </a>
+                    </div>
+
+                    <div class="ListaAtividades">
+
+                        <!-- MINUTOS ATRÁS -->
+
+                        <div class="AtividadeItem Color_Patrimonio">
+                            <div class="AtividadeIcon IconPatrimonio"><span>&#43;</span></div>
+                            <div class="AtividadeConteudo">
+                                <p>Novo patrimônio cadastrado: <strong>Notebook Dell</strong></p>
+                                <span class="AtividadeDescricao">Equipamento registrado no sistema e adicionado ao inventário.</span>
+                            </div>
+                            <span class="AtividadeTempo">há 5 min</span>
+                        </div>
+
+                        <div class="AtividadeItem Color_Movimentacao">
+                            <div class="AtividadeIcon IconMovimentacao"><span>&#8596;</span></div>
+                            <div class="AtividadeConteudo">
+                                <p>Movimentação realizada: <strong>Transferência para TI</strong></p>
+                                <span class="AtividadeDescricao">Equipamento transferido para o setor de Tecnologia da Informação.</span>
+                            </div>
+                            <span class="AtividadeTempo">há 12 min</span>
+                        </div>
+
+                        <div class="AtividadeItem Color_Manutencao">
+                            <div class="AtividadeIcon IconManutencao"><span>&#128295;</span></div>
+                            <div class="AtividadeConteudo">
+                                <p>Manutenção concluída: <strong>Impressora HP</strong></p>
+                                <span class="AtividadeDescricao">Serviço finalizado e equipamento liberado para utilização.</span>
+                            </div>
+                            <span class="AtividadeTempo">há 30 min</span>
+                        </div>
+
+                        <!-- HORAS ATRÁS -->
+
+                        <div class="AtividadeItem Color_Usuario">
+                            <div class="AtividadeIcon IconUsuario"><span>&#9823;</span></div>
+                            <div class="AtividadeConteudo">
+                                <p>Novo usuário cadastrado: <strong>Maria Silva</strong></p>
+                                <span class="AtividadeDescricao">Nova conta criada e adicionada ao gerenciamento de usuários.</span>
+                            </div>
+                            <span class="AtividadeTempo">há 1 h</span>
+                        </div>
+
+                        <div class="AtividadeItem Color_Patrimonio">
+                            <div class="AtividadeIcon IconPatrimonio"><span>&#43;</span></div>
+                            <div class="AtividadeConteudo">
+                                <p>Patrimônio atualizado: <strong>Monitor Samsung</strong></p>
+                                <span class="AtividadeDescricao">Informações cadastrais do equipamento foram atualizadas.</span>
+                            </div>
+                            <span class="AtividadeTempo">há 2 h</span>
+                        </div>
+
+                        <div class="AtividadeItem Color_Movimentacao">
+                            <div class="AtividadeIcon IconMovimentacao"><span>&#8596;</span></div>
+                            <div class="AtividadeConteudo">
+                                <p>Equipamento transferido: <strong>Computador para RH</strong></p>
+                                <span class="AtividadeDescricao">Alteração de localização e responsabilidade do patrimônio.</span>
+                            </div>
+                            <span class="AtividadeTempo">há 3 h</span>
+                        </div>
+
+                        <div class="AtividadeItem Color_Manutencao">
+                            <div class="AtividadeIcon IconManutencao"><span>&#128295;</span></div>
+                            <div class="AtividadeConteudo">
+                                <p>Manutenção agendada: <strong>Projetor Epson</strong></p>
+                                <span class="AtividadeDescricao">Equipamento programado para uma nova manutenção técnica.</span>
+                            </div>
+                            <span class="AtividadeTempo">há 4 h</span>
+                        </div>
+
+                        <div class="AtividadeItem Color_Usuario">
+                            <div class="AtividadeIcon IconUsuario"><span>&#9823;</span></div>
+                            <div class="AtividadeConteudo">
+                                <p>Usuário atualizado: <strong>João Oliveira</strong></p>
+                                <span class="AtividadeDescricao">Dados da conta e informações de acesso foram modificados.</span>
+                            </div>
+                            <span class="AtividadeTempo">há 5 h</span>
+                        </div>
+
+                        <!-- ONTEM -->
+
+                        <div class="AtividadeItem Color_Patrimonio">
+                            <div class="AtividadeIcon IconPatrimonio"><span>&#43;</span></div>
+                            <div class="AtividadeConteudo">
+                                <p>Novo patrimônio cadastrado: <strong>Teclado Logitech</strong></p>
+                                <span class="AtividadeDescricao">Novo periférico registrado e incluído no controle patrimonial.</span>
+                            </div>
+                            <span class="AtividadeTempo">ontem</span>
+                        </div>
+
+                        <div class="AtividadeItem Color_Manutencao">
+                            <div class="AtividadeIcon IconManutencao"><span>&#128295;</span></div>
+                            <div class="AtividadeConteudo">
+                                <p>Manutenção pendente: <strong>Ar-condicionado</strong></p>
+                                <span class="AtividadeDescricao">Equipamento aguardando avaliação ou realização do serviço técnico.</span>
+                            </div>
+                            <span class="AtividadeTempo">ontem</span>
+                        </div>
+
+                        <div class="AtividadeItem Color_Patrimonio">
+                            <div class="AtividadeIcon IconPatrimonio"><span>&#43;</span></div>
+                            <div class="AtividadeConteudo">
+                                <p>Novo patrimônio cadastrado: <strong>Mouse Logitech</strong></p>
+                                <span class="AtividadeDescricao">Periférico adicionado ao inventário de equipamentos.</span>
+                            </div>
+                            <span class="AtividadeTempo">ontem</span>
+                        </div>
+
+                        <!-- HÁ 2 DIAS -->
+
+                        <div class="AtividadeItem Color_Patrimonio">
+                            <div class="AtividadeIcon IconPatrimonio"><span>&#43;</span></div>
+                            <div class="AtividadeConteudo">
+                                <p>Patrimônio cadastrado: <strong>Notebook Lenovo</strong></p>
+                                <span class="AtividadeDescricao">Novo equipamento registrado no inventário.</span>
+                            </div>
+                            <span class="AtividadeTempo">há 2 dias</span>
+                        </div>
+
+                        <div class="AtividadeItem Color_Movimentacao">
+                            <div class="AtividadeIcon IconMovimentacao"><span>&#8596;</span></div>
+                            <div class="AtividadeConteudo">
+                                <p>Transferência realizada: <strong>Setor Financeiro</strong></p>
+                                <span class="AtividadeDescricao">Equipamento transferido para o departamento financeiro.</span>
+                            </div>
+                            <span class="AtividadeTempo">há 2 dias</span>
+                        </div>
+
+                        <!-- HÁ 3 DIAS -->
+
+                        <div class="AtividadeItem Color_Manutencao">
+                            <div class="AtividadeIcon IconManutencao"><span>&#128295;</span></div>
+                            <div class="AtividadeConteudo">
+                                <p>Manutenção iniciada: <strong>Computador Dell</strong></p>
+                                <span class="AtividadeDescricao">Equipamento encaminhado para avaliação técnica.</span>
+                            </div>
+                            <span class="AtividadeTempo">há 3 dias</span>
+                        </div>
+
+                        <div class="AtividadeItem Color_Usuario">
+                            <div class="AtividadeIcon IconUsuario"><span>&#9823;</span></div>
+                            <div class="AtividadeConteudo">
+                                <p>Permissão atualizada: <strong>Pedro Santos</strong></p>
+                                <span class="AtividadeDescricao">Nível de acesso atualizado pelo administrador.</span>
+                            </div>
+                            <span class="AtividadeTempo">há 3 dias</span>
+                        </div>
+
+                        <!-- HÁ 4 DIAS -->
+
+                        <div class="AtividadeItem Color_Patrimonio">
+                            <div class="AtividadeIcon IconPatrimonio"><span>&#43;</span></div>
+                            <div class="AtividadeConteudo">
+                                <p>Patrimônio atualizado: <strong>Impressora Epson</strong></p>
+                                <span class="AtividadeDescricao">Informações cadastrais e localização modificadas.</span>
+                            </div>
+                            <span class="AtividadeTempo">há 4 dias</span>
+                        </div>
+
+                        <div class="AtividadeItem Color_Movimentacao">
+                            <div class="AtividadeIcon IconMovimentacao"><span>&#8596;</span></div>
+                            <div class="AtividadeConteudo">
+                                <p>Equipamento transferido: <strong>Monitor LG</strong></p>
+                                <span class="AtividadeDescricao">Patrimônio realocado para o setor de Recursos Humanos.</span>
+                            </div>
+                            <span class="AtividadeTempo">há 4 dias</span>
+                        </div>
+
+                        <!-- HÁ 5 DIAS -->
+
+                        <div class="AtividadeItem Color_Manutencao">
+                            <div class="AtividadeIcon IconManutencao"><span>&#128295;</span></div>
+                            <div class="AtividadeConteudo">
+                                <p>Manutenção concluída: <strong>Ar-condicionado</strong></p>
+                                <span class="AtividadeDescricao">Reparo finalizado e equipamento liberado para utilização.</span>
+                            </div>
+                            <span class="AtividadeTempo">há 5 dias</span>
+                        </div>
+
+                        <div class="AtividadeItem Color_Usuario">
+                            <div class="AtividadeIcon IconUsuario"><span>&#9823;</span></div>
+                            <div class="AtividadeConteudo">
+                                <p>Novo usuário cadastrado: <strong>Carla Mendes</strong></p>
+                                <span class="AtividadeDescricao">Nova conta adicionada ao sistema de gerenciamento.</span>
+                            </div>
+                            <span class="AtividadeTempo">há 5 dias</span>
+                        </div>
+
+                        <!-- HÁ 6 DIAS -->
+
+                        <div class="AtividadeItem Color_Patrimonio">
+                            <div class="AtividadeIcon IconPatrimonio"><span>&#43;</span></div>
+                            <div class="AtividadeConteudo">
+                                <p>Patrimônio cadastrado: <strong>Estabilizador SMS</strong></p>
+                                <span class="AtividadeDescricao">Equipamento adicionado ao inventário patrimonial.</span>
+                            </div>
+                            <span class="AtividadeTempo">há 6 dias</span>
+                        </div>
+
+                        <div class="AtividadeItem Color_Movimentacao">
+                            <div class="AtividadeIcon IconMovimentacao"><span>&#8596;</span></div>
+                            <div class="AtividadeConteudo">
+                                <p>Transferência realizada: <strong>Setor Diretoria</strong></p>
+                                <span class="AtividadeDescricao">Alteração de localização e responsabilidade do equipamento.</span>
+                            </div>
+                            <span class="AtividadeTempo">há 6 dias</span>
+                        </div>
+
+                        <!-- HÁ 7 DIAS -->
+
+                        <div class="AtividadeItem Color_Manutencao">
+                            <div class="AtividadeIcon IconManutencao"><span>&#128295;</span></div>
+                            <div class="AtividadeConteudo">
+                                <p>Manutenção agendada: <strong>Notebook Lenovo</strong></p>
+                                <span class="AtividadeDescricao">Avaliação preventiva programada para o equipamento.</span>
+                            </div>
+                            <span class="AtividadeTempo">há 7 dias</span>
+                        </div>
+
+                        <div class="AtividadeItem Color_Usuario">
+                            <div class="AtividadeIcon IconUsuario"><span>&#9823;</span></div>
+                            <div class="AtividadeConteudo">
+                                <p>Usuário atualizado: <strong>Marcos Lima</strong></p>
+                                <span class="AtividadeDescricao">Informações cadastrais da conta foram modificadas.</span>
+                            </div>
+                            <span class="AtividadeTempo">há 7 dias</span>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
             </section>
+
 
         </main>
 
