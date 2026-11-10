@@ -42,41 +42,6 @@ A proposta é centralizar as informações dos patrimônios, permitindo o cadast
 - Git
 - GitHub
 
-## Estrutura do projeto
-
-```text
-PatriManager/
-│
-├── public/
-│   ├── index.html
-│   ├── patrimonio.html
-│   ├── cadastro.html
-│   ├── editar.html
-│   ├── detalhes.html
-│   ├── pessoas.html
-│   ├── setores.html
-│   ├── movimentacoes.html
-│   ├── manutencoes.html
-│   ├── baixas.html
-│   ├── relatorios.html
-│   ├── notificacoes.html
-│   ├── login.html
-│   │
-│   ├── css/
-│   ├── js/
-│   └── img/
-│
-├── backend/
-│   ├── database.js
-│   ├── server.js
-│   └── routes/
-│
-├── .env
-├── .gitignore
-├── package.json
-└── README.md
-```
-
 ## Instalação e execução
 
 ### 1. Clonar o repositório
