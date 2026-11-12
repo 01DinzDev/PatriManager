@@ -1,0 +1,159 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #232323;
+}
+
+.LoginContainer {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.LoginCard {
+    width: 100%;
+    max-width: 400px;
+
+    padding: 35px;
+
+    background-color: #ffffff;
+    border-radius: 12px;
+
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.LoginHeader {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.LoginHeader h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #232323;
+}
+
+.LoginHeader p {
+    font-size: 14px;
+    color: #777777;
+}
+
+.InputGroup {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.InputGroup label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.InputGroup input {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+
+    outline: none;
+    font-size: 14px;
+}
+
+.InputGroup input:focus {
+    border-color: #555555;
+}
+
+.PasswordContainer {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+.PasswordContainer input {
+    padding-right: 45px;
+}
+
+.PasswordContainer button {
+    position: absolute;
+    right: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    border: none;
+
+    color: #777777;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.PasswordContainer button:hover {
+    color: #232323;
+}
+
+#btnLogin {
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #232323;
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btnLogin:hover {
+    background-color: #444444;
+}
+
+#btnLogin:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#mensagemLogin {
+    margin-top: 12px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.LoginFooter {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.LoginFooter p {
+    font-size: 11px;
+    color: #888888;
+}
