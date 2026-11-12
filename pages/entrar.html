@@ -1,14 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title> Entrar || PatriManager </title>
-    <link rel="shortcut icon" href="/public/assets/icons/PatriManagerLogo/icons/iconlogowhite.png" type="image/x-icon">
+    <title>Entrar || PatriManager</title>
+    <link rel="shortcut icon" href="../public/assets/icons/PatriManagerLogo/icons/iconlogowhite.png" type="image/x-icon">
+    <link 
+        rel="stylesheet" 
+        href="../src/css/entrar.css">
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
+
 <body>
-    
+
+    <main class="LoginContainer">
+        <section class="LoginCard">
+
+            <header class="LoginHeader">
+                <h1>PatriManager</h1>
+                <p>Gerenciamento de Patrimônio</p>
+            </header>
+
+            <form id="formLogin">
+
+                <div class="InputGroup">
+                    <label for="login">
+                        Usuário
+                    </label>
+
+                    <input
+                        type="text"
+                        id="login"
+                        name="login"
+                        placeholder="Digite seu usuário"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <div class="InputGroup">
+                    <label for="senha">
+                        Senha
+                    </label>
+
+                    <div class="PasswordContainer">
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="Digite sua senha"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="toggleSenha"
+                            aria-label="Mostrar senha"
+                            aria-pressed="false"
+                        >
+                            <i class="fa-solid fa-eye" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <button type="submit" id="btnLogin">
+                    Entrar
+                </button>
+
+                <p id="mensagemLogin" role="alert"></p>
+
+            </form>
+
+            <footer class="LoginFooter">
+                <p>© 2026 PatriManager. Todos os direitos reservados.</p>
+            </footer>
+
+        </section>
+    </main>
+
+    <script src="../src/utils/mostrarSenha.js"></script>
+    <script src="../src/services/autenticacaoService.js"></script>
+    <script src="../src/js/script.js"></script>
+
 </body>
 </html>
