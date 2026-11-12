@@ -1,0 +1,157 @@
+
+/*
+   Tablet responsividade
+   769px -> 1024px
+*/
+
+@media (max-width: 1024px) {
+
+    #DivHeader {
+        padding: 15px 25px;
+    }
+
+    #DivHeaderMain a {
+        font-size: 22px;
+    }
+
+    #DivHeaderMain img {
+        width: 32px;
+        height: 32px;
+    }
+
+    section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #divSection {
+        width: 100%;
+    }
+
+    section img {
+        width: 100%;
+        height: auto;
+        max-width: 750px;
+        object-fit: contain;
+    }
+
+    footer {
+        padding: 14px 20px;
+    }
+}
+
+
+/*
+   Celular
+   até 768px
+*/
+
+@media (max-width: 768px) {
+
+    #DivHeader {
+        padding: 14px 18px;
+    }
+
+    #DivHeaderMain {
+        gap: 7px;
+    }
+
+    #DivHeaderMain a {
+        font-size: 20px;
+    }
+
+    #DivHeaderMain img {
+        width: 30px;
+        height: 30px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    section {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #divSection {
+        width: 100%;
+    }
+
+    section img {
+        width: 100%;
+        height: auto;
+        max-width: 550px;
+    }
+
+    footer {
+        padding: 13px 18px;
+        gap: 10px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+
+    footer a {
+        font-size: 18px;
+    }
+}
+
+
+/*
+   Celular - Mini
+   até 570px
+*/
+
+@media (max-width: 570px) {
+
+    #DivHeader {
+        padding: 12px 14px;
+    }
+
+    #DivHeaderMain {
+        gap: 5px;
+    }
+
+    #DivHeaderMain a {
+        font-size: 17px;
+    }
+
+    #DivHeaderMain img {
+        width: 27px;
+        height: 27px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #divSection {
+        width: 100%;
+    }
+
+    section img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    footer {
+        padding: 12px;
+        gap: 8px;
+    }
+
+    footer p {
+        font-size: 11px;
+    }
+
+    footer a {
+        font-size: 16px;
+    }
+}
