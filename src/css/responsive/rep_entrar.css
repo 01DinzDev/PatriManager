@@ -1,157 +1,174 @@
 
-/*
-   Tablet responsividade
-   769px -> 1024px
-*/
+/**
+*   Tablet responsividade
+*   769px -> 1024px
+**/
 
 @media (max-width: 1024px) {
 
-    #DivHeader {
-        padding: 15px 25px;
+    .LoginContainer {
+        padding: 25px;
     }
 
-    #DivHeaderMain a {
-        font-size: 22px;
+    .LoginCard {
+        max-width: 380px;
+        padding: 30px;
     }
 
-    #DivHeaderMain img {
-        width: 32px;
-        height: 32px;
+    .LoginHeader h1 {
+        font-size: 26px;
     }
 
-    section {
-        width: 100%;
-        padding: 20px;
+    .LoginHeader p {
+        font-size: 13px;
     }
 
-    #divSection {
-        width: 100%;
+    .InputGroup input {
+        padding: 11px;
     }
 
-    section img {
-        width: 100%;
-        height: auto;
-        max-width: 750px;
-        object-fit: contain;
+    #btnLogin {
+        padding: 11px;
     }
 
-    footer {
-        padding: 14px 20px;
+    .LoginFooter p {
+        font-size: 11px;
     }
 }
 
 
-/*
-   Celular
-   até 768px
-*/
+/**
+*   Celular
+*   até 768px
+**/
 
 @media (max-width: 768px) {
 
-    #DivHeader {
-        padding: 14px 18px;
+    .LoginContainer {
+        padding: 20px;
     }
 
-    #DivHeaderMain {
+    .LoginCard {
+        max-width: 350px;
+        padding: 25px;
+    }
+
+    .LoginHeader {
+        margin-bottom: 25px;
+    }
+
+    .LoginHeader h1 {
+        font-size: 24px;
+    }
+
+    .LoginHeader p {
+        font-size: 13px;
+    }
+
+    .InputGroup {
         gap: 7px;
+        margin-bottom: 17px;
     }
 
-    #DivHeaderMain a {
-        font-size: 20px;
-    }
-
-    #DivHeaderMain img {
-        width: 30px;
-        height: 30px;
-    }
-
-    nav a {
+    .InputGroup label {
         font-size: 13px;
     }
 
-    section {
-        width: 100%;
-        padding: 15px;
-    }
-
-    #divSection {
-        width: 100%;
-    }
-
-    section img {
-        width: 100%;
-        height: auto;
-        max-width: 550px;
-    }
-
-    footer {
-        padding: 13px 18px;
-        gap: 10px;
-    }
-
-    footer p {
+    .InputGroup input {
+        padding: 11px;
         font-size: 13px;
     }
 
-    footer a {
-        font-size: 18px;
+    .PasswordContainer input {
+        padding-right: 40px;
+    }
+
+    .PasswordContainer button {
+        right: 10px;
+        font-size: 15px;
+    }
+
+    #btnLogin {
+        padding: 11px;
+        font-size: 14px;
+    }
+
+    .LoginFooter {
+        margin-top: 20px;
+    }
+
+    .LoginFooter p {
+        font-size: 10px;
     }
 }
 
 
-/*
-   Celular - Mini
-   até 570px
-*/
+/**
+*   Celular - Mini
+*   até 570px
+**/
 
 @media (max-width: 570px) {
 
-    #DivHeader {
-        padding: 12px 14px;
+    .LoginContainer {
+        padding: 15px;
     }
 
-    #DivHeaderMain {
-        gap: 5px;
+    .LoginCard {
+        max-width: 100%;
+        padding: 22px 18px;
+        border-radius: 10px;
     }
 
-    #DivHeaderMain a {
-        font-size: 17px;
+    .LoginHeader {
+        margin-bottom: 22px;
     }
 
-    #DivHeaderMain img {
-        width: 27px;
-        height: 27px;
+    .LoginHeader h1 {
+        font-size: 21px;
     }
 
-    nav a {
+    .LoginHeader p {
         font-size: 12px;
     }
 
-    section {
-        width: 100%;
+    .InputGroup {
+        gap: 6px;
+        margin-bottom: 15px;
+    }
+
+    .InputGroup label {
+        font-size: 12px;
+    }
+
+    .InputGroup input {
         padding: 10px;
+        font-size: 12px;
     }
 
-    #divSection {
-        width: 100%;
+    .PasswordContainer input {
+        padding-right: 38px;
     }
 
-    section img {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
+    .PasswordContainer button {
+        right: 10px;
+        font-size: 14px;
     }
 
-    footer {
-        padding: 12px;
-        gap: 8px;
+    #btnLogin {
+        padding: 10px;
+        font-size: 13px;
     }
 
-    footer p {
+    #mensagemLogin {
         font-size: 11px;
     }
 
-    footer a {
-        font-size: 16px;
+    .LoginFooter {
+        margin-top: 18px;
+    }
+
+    .LoginFooter p {
+        font-size: 9px;
     }
 }
