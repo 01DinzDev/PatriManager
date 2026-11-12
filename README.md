@@ -1,107 +1,122 @@
 # PatriManager
 
-Sistema de gerenciamento e controle de patrimônio.
+Sistema web de gerenciamento e controle de patrimônio, desenvolvido para centralizar informações sobre bens, responsáveis, setores e movimentações.
 
 ## Sobre o projeto
 
-O **PatriManager** é um sistema desenvolvido para facilitar o gerenciamento, o acompanhamento e o controle de bens patrimoniais.
+O **PatriManager** tem como objetivo facilitar o cadastro, a consulta e o acompanhamento dos bens patrimoniais, incluindo manutenções e baixas.
 
-A proposta é centralizar as informações dos patrimônios, permitindo o cadastro, a consulta, a edição e o acompanhamento de movimentações, manutenções e baixas.
+O desenvolvimento atual está concentrado no **frontend com HTML, CSS e JavaScript**. A integração com uma API e um banco de dados é uma próxima etapa do projeto.
 
-## Funcionalidades previstas
+> As telas e interações do frontend não representam, por si só, autenticação segura ou persistência dos dados em um banco.
 
-- [x] Estrutura inicial do projeto
-- [ ] Dashboard com indicadores
-- [ ] Cadastro de patrimônios
-- [ ] Listagem e consulta de patrimônios
-- [ ] Edição de patrimônios
-- [ ] Gerenciamento de pessoas responsáveis
-- [ ] Gerenciamento de setores
-- [ ] Controle de movimentações
-- [ ] Registro de manutenções
-- [ ] Controle de baixas patrimoniais
-- [ ] Relatórios
-- [ ] Sistema de autenticação
-- [ ] Integração com banco de dados
+## Interface em desenvolvimento
 
-## Tecnologias utilizadas
+- Página inicial de apresentação do sistema.
+- Página de login.
+- Dashboard com indicadores, atalhos e atividades recentes.
+- Exibição do nome do usuário no dashboard.
+- Área de notificações e atividades.
+- Layout responsivo para computadores, tablets e celulares.
 
-### Frontend
-- HTML5
-- CSS3
-- JavaScript
+## Funcionalidades planejadas
 
-### Backend
-- Node.js
-- Express
+- [ ] Cadastro, listagem, consulta e edição de patrimônios.
+- [ ] Gerenciamento de pessoas responsáveis e setores.
+- [ ] Registro de movimentações entre setores e responsáveis.
+- [ ] Acompanhamento de manutenções.
+- [ ] Registro de baixas patrimoniais.
+- [ ] Relatórios e indicadores com dados reais.
+- [ ] Autenticação e autorização no backend.
+- [ ] Integração com banco de dados.
+- [ ] Validação e tratamento de erros nas operações da API.
 
-### Banco de dados
-- MySQL
+## Tecnologias
 
-### Versionamento
-- Git
-- GitHub
+| Área | Tecnologias | Etapa |
+|---|---|---|
+| Interface | HTML5, CSS3 e JavaScript | Desenvolvimento atual |
+| Backend | Node.js e Express | Planejado |
+| Banco de dados | MySQL | Planejado |
+| Versionamento | Git e GitHub | Organização do código |
 
-## Instalação e execução
+## Como executar o frontend
 
-### 1. Clonar o repositório
+1. Clone o repositório, substituindo o endereço de exemplo pelo endereço real:
 
-```bash
-git clone URL_DO_REPOSITORIO
-```
+   ```bash
+   git clone URL_DO_REPOSITORIO PatriManager
+   cd PatriManager
+   ```
 
-### 2. Entrar na pasta do projeto
+2. Abra a pasta do projeto no Visual Studio Code.
+3. Abra a página inicial com um servidor local, como a extensão **Live Server**.
+4. Navegue pelas páginas para visualizar a interface e testar as interações disponíveis.
 
-```bash
-cd PatriManager
-```
+Para visualizar o frontend estático, não é necessário configurar o MySQL nem executar `npm install`.
 
-### 3. Instalar as dependências
+Os comandos `npm install` e `npm start` serão aplicáveis ao backend quando as dependências e os scripts estiverem definidos no `package.json`.
 
-```bash
-npm install
-```
+## Organização sugerida do código
 
-Caso as dependências ainda não estejam configuradas:
+| Local | Responsabilidade |
+|---|---|
+| Páginas HTML | Estrutura das telas e formulários |
+| `public/assets/` | Imagens, logos e ícones |
+| `src/css/` | Estilos e regras de responsividade |
+| `src/js/` | Interações e comportamento das páginas |
+| `services/` | Funções para comunicação com a futura API |
+| `utils/` | Funções auxiliares reutilizáveis |
 
-```bash
-npm install express mysql2 dotenv bcrypt
-```
+Essa organização serve como referência para a evolução do projeto. Os caminhos de `services/` e `utils/` devem acompanhar a estrutura adotada para os arquivos JavaScript.
 
-### 4. Configurar as variáveis de ambiente
+## Próximas etapas de integração
 
-Crie um arquivo `.env` na raiz do projeto:
+1. Criar o servidor com Node.js e Express.
+2. Modelar o banco de dados para usuários, patrimônios, setores, responsáveis, movimentações e manutenções.
+3. Implementar as rotas da API para consultar, cadastrar e atualizar registros.
+4. Adicionar autenticação, controle de acesso e validação dos dados no servidor.
+5. Conectar os formulários e as listagens à API por meio dos serviços JavaScript.
+6. Substituir os dados demonstrativos por dados retornados pelo backend.
+7. Testar os fluxos de login, cadastro, edição, movimentação e baixa.
+
+### Configuração futura do ambiente
+
+Quando o backend estiver implementado, suas variáveis de ambiente poderão seguir este modelo:
 
 ```env
 DB_HOST=localhost
-DB_USER=root
+DB_USER=usuario_da_aplicacao
 DB_PASSWORD=sua_senha
 DB_NAME=patri_manager
 PORT=3000
 ```
 
-Não compartilhe esse arquivo nem envie suas credenciais para o GitHub.
+As credenciais devem ficar no ambiente do servidor. O frontend acessará a API, sem conexão direta com o banco de dados.
 
-### 5. Executar o projeto
+Mantenha o arquivo `.env` fora do versionamento. Um `.env.example` pode documentar os campos necessários, sem credenciais reais.
 
-```bash
-npm start
+Exemplo de entradas para o `.gitignore`:
+
+```gitignore
+node_modules/
+.env
+.env.*
+!.env.example
 ```
-
-A configuração do script `start` e do servidor deverá estar implementada no `package.json` e no backend.
 
 ## Organização do desenvolvimento
 
-O projeto utiliza o Git Flow para organizar o desenvolvimento.
+Fluxo de branches proposto para o projeto:
 
 | Branch | Finalidade |
 |---|---|
-| `main` | Versão estável do projeto |
-| `develop` | Integração das funcionalidades |
-| `feature/*` | Desenvolvimento de novas funcionalidades |
-| `fix/*` | Correção de problemas |
+| `main` | Versão estável |
+| `develop` | Integração das funcionalidades em desenvolvimento |
+| `feature/*` | Novas funcionalidades |
+| `fix/*` | Correções de problemas |
 
-### Exemplo de criação de uma branch
+Se a branch `develop` já existir, uma nova funcionalidade pode começar assim:
 
 ```bash
 git checkout develop
@@ -111,27 +126,30 @@ git checkout -b feature/patrimonio
 
 ### Padrão de commits
 
+Use mensagens curtas que descrevam a alteração realizada. Os exemplos abaixo estão em inglês.
+
 | Prefixo | Utilização |
 |---|---|
-| `feat` | Nova funcionalidade |
-| `fix` | Correção de erros |
-| `style` | Alterações visuais e formatação |
-| `refactor` | Reorganização do código |
-| `docs` | Documentação |
-| `chore` | Configurações e manutenção |
-
-Exemplos:
+| `feat` | Nova funcionalidade ou tela |
+| `fix` | Correção de comportamento ou aparência |
+| `style` | Formatação do código, como indentação e espaçamento |
+| `refactor` | Reorganização sem alterar o comportamento |
+| `docs` | Alterações na documentação |
+| `chore` | Configurações e manutenção do projeto |
 
 ```bash
-git commit -m "feat: cria página de patrimônio"
-git commit -m "style: adiciona responsividade ao dashboard"
-git commit -m "fix: corrige navegação entre páginas"
-git commit -m "docs: atualiza documentação do projeto"
+git commit -m "feat: add asset management page"
+git commit -m "feat: add responsive dashboard layout"
+git commit -m "fix: adjust home and login pages"
+git commit -m "style: format HTML and CSS files"
+git commit -m "docs: update project README"
 ```
+
+Alterações em CSS devem usar o prefixo que descreve sua finalidade: `feat` para um recurso novo, `fix` para uma correção e `style` para formatação do código.
 
 ## Objetivo
 
-Desenvolver uma aplicação organizada, responsiva e preparada para integração com banco de dados, oferecendo maior controle sobre os bens patrimoniais e suas movimentações.
+Entregar uma aplicação organizada e responsiva, com integração futura ao backend e ao banco de dados, para tornar o controle patrimonial mais simples e centralizado.
 
 ---
 
