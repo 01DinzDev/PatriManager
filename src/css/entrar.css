@@ -41,7 +41,11 @@ body {
 
 .LoginHeader {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
+}
+
+#imgLoginHeader {
+    width: 80%;
 }
 
 .LoginHeader h1 {
